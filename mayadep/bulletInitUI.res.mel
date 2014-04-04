@@ -1,0 +1,65 @@
+// Copyright (C) 1997-2013 Autodesk, Inc., and/or its licensors.
+// All rights reserved.
+//
+// The coded instructions, statements, computer programs, and/or related
+// material (collectively the "Data") in these files contain unpublished
+// information proprietary to Autodesk, Inc. ("Autodesk") and/or its licensors,
+// which is protected by U.S. and Canadian federal copyright law and by
+// international treaties.
+//
+// The Data is provided for use exclusively by You. You have the right to use,
+// modify, and incorporate this Data into other products for purposes authorized 
+// by the Autodesk software license agreement, without fee.
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. AUTODESK
+// DOES NOT MAKE AND HEREBY DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTIES
+// INCLUDING, BUT NOT LIMITED TO, THE WARRANTIES OF NON-INFRINGEMENT,
+// MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, OR ARISING FROM A COURSE 
+// OF DEALING, USAGE, OR TRADE PRACTICE. IN NO EVENT WILL AUTODESK AND/OR ITS
+// LICENSORS BE LIABLE FOR ANY LOST REVENUES, DATA, OR PROFITS, OR SPECIAL,
+// DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES, EVEN IF AUTODESK AND/OR ITS
+// LICENSORS HAS BEEN ADVISED OF THE POSSIBILITY OR PROBABILITY OF SUCH DAMAGES.
+
+displayString -replace -value "Add Colliders to Skeleton" m_bulletInitUI.kAddCollider;
+displayString -replace -value "Select the joint at the root of the skeleton" m_bulletInitUI.kAddColliderAnnot;
+displayString -replace -value "Collider creation options" m_bulletInitUI.kAddColliderOpt;
+displayString -replace -value "Bullet Help" m_bulletInitUI.kBulletHelp;
+displayString -replace -value "Open Bullet Documentation" m_bulletInitUI.kBulletHelpAnnot;
+displayString -replace -value "Bullet" m_bulletInitUI.kBulletMenuTitle;
+displayString -replace -value "Create Active Rigid Body" m_bulletInitUI.kCreateActiveRB;
+displayString -replace -value "Create a dynamic Rigid Body object" m_bulletInitUI.kCreateActiveRBAnnot;
+displayString -replace -value "Active Rigid Body creation options" m_bulletInitUI.kCreateActiveRBOpt;
+displayString -replace -value "Select Soft Body vertices and an object to act as the anchor" m_bulletInitUI.kCreateAnchorAnnot;
+displayString -replace -value "Create Passive Rigid Body" m_bulletInitUI.kCreatePassiveRB;
+displayString -replace -value "Create a kinematic Rigid Body object" m_bulletInitUI.kCreatePassiveRBAnnot;
+displayString -replace -value "Passive Rigid Body creation options" m_bulletInitUI.kCreatePassiveRBOpt;
+displayString -replace -value "Create Rigid Body Constraint" m_bulletInitUI.kCreateRBConstraint;
+displayString -replace -value "Constrain 1 or 2 selected Rigid Bodies" m_bulletInitUI.kCreateRBConstraintAnnot;
+displayString -replace -value "Rigid Body Constraint options" m_bulletInitUI.kCreateRBConstraintOpt;
+displayString -replace -value "Create Ragdoll from Skeleton" m_bulletInitUI.kCreateRagdoll;
+displayString -replace -value "Create Ragdoll skeleton from existing skeleton" m_bulletInitUI.kCreateRagdollAnnot;
+displayString -replace -value "Ragdoll creation options" m_bulletInitUI.kCreateRagdollOpt;
+displayString -replace -value "Create Soft Body" m_bulletInitUI.kCreateSB;
+displayString -replace -value "Create Constraint: Soft Body Anchor" m_bulletInitUI.kCreateSBAnchor;
+displayString -replace -value "Select geometry objects to create Soft Bodies" m_bulletInitUI.kCreateSBAnnot;
+displayString -replace -value "Create Soft Body options" m_bulletInitUI.kCreateSBOpt;
+displayString -replace -value "Delete Entire Bullet System" m_bulletInitUI.kDeleteBulletSystem;
+displayString -replace -value "Delete all Bullet solvers and their rigid and soft bodies" m_bulletInitUI.kDeleteBulletSystemAnnot;
+displayString -replace -value "Interactive Playback" m_bulletInitUI.kInteractivePlayback;
+displayString -replace -value "Start Interactive Playback" m_bulletInitUI.kInteractivePlaybackAnnot;
+displayString -replace -value "Bend Resistance" m_bulletInitUI.kPaintBendResistanceProp;
+displayString -replace -value "Paint particle Bend Resistance" m_bulletInitUI.kPaintBendResistancePropAnnot;
+displayString -replace -value "Linear Stiffness" m_bulletInitUI.kPaintLinearStiffnessProp;
+displayString -replace -value "Paint particle Linear Stiffness" m_bulletInitUI.kPaintLinearStiffnessPropAnnot;
+displayString -replace -value "Mass" m_bulletInitUI.kPaintMassProp;
+displayString -replace -value "Paint particle mass factor (multiplied by the main mass attribute)" m_bulletInitUI.kPaintMassPropAnnot;
+displayString -replace -value "Paint Soft Body Vertex Properties" m_bulletInitUI.kPaintSBProps;
+displayString -replace -value "Select Solver" m_bulletInitUI.kSelectSolver;
+displayString -replace -value "Select Bullet Solver" m_bulletInitUI.kSelectSolverAnnot;
+displayString -replace -value "Bend Resistance" m_bulletInitUI.kSetBendResistanceProp;
+displayString -replace -value "Explicitly set per-particle bend resistance for particles corresponding to selected mesh vertices (multiplied by the main bend resistance attribute)" m_bulletInitUI.kSetBendResistancePropAnnot;
+displayString -replace -value "Linear Stiffness" m_bulletInitUI.kSetLinearStiffnessProp;
+displayString -replace -value "Explicitly set per-particle linear stiffness for particles corresponding to selected mesh vertices (multipled by the main linear stiffness)" m_bulletInitUI.kSetLinearStiffnessPropAnnot;
+displayString -replace -value "Mass" m_bulletInitUI.kSetMassProp;
+displayString -replace -value "Explicitly set per-particle mass for particles corresponding to selected mesh vertices (multiplied by the main mass attribute)" m_bulletInitUI.kSetMassPropAnnot;
+displayString -replace -value "Set Soft Body Vertex Properties" m_bulletInitUI.kSetSBProps;
+displayString -replace -value "[BULLET] " m_bulletInitUI.kSolverProperties;

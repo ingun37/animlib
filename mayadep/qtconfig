@@ -1,0 +1,40 @@
+TEMPLATE = lib
+CONFIG -= debug
+CONFIG += qt warn_on plugin
+
+_DEVKIT_LOCATION = $$(MAYA_LOCATION)/../../devkit
+_MAYA_INCLUDE_DIR = $${_DEVKIT_LOCATION}/include
+
+DEFINES		+= CC_GNU_ OSMac_ OSMacOSX_ Bits32_  REQUIRE_IOSTREAM \
+			OSMac_MachO_ _LANGUAGE_C_PLUS_PLUS 
+INCLUDEPATH	+= .. "$${_MAYA_INCLUDE_DIR}"
+TARGET_EXT	= bundle
+QMAKE_EXTENSION_SHLIB	= bundle
+
+QMAKE_CC	= gcc-4.2
+QMAKE_CXX	= g++-4.2
+
+_CFLAGS		= -O3 -include "$${_MAYA_INCLUDE_DIR}/maya/OpenMayaMac.h"
+QMAKE_CFLAGS	+= $${_CFLAGS}
+
+QMAKE_CXXFLAGS	+= $${_CFLAGS} $(WARNFLAGS) $(ERROR_FLAGS) \
+			-fno-gnu-keywords -fpascal-strings
+
+_DYNLIB_LOCATION	= $$(MAYA_LOCATION)/MacOS
+_LREMAP			= -Wl,-executable_path,"$${_DYNLIB_LOCATION}"
+
+LIBS		+= -L"$${_DYNLIB_LOCATION}" $${_LREMAP} -lOpenMaya -lFoundation \
+			-framework System -framework CoreServices \
+			-framework SystemConfiguration \
+			-framework Carbon -framework Cocoa \
+			-framework ApplicationServices \
+			-framework IOKit
+
+QMAKE_LFLAGS	+= -fno-gnu-keywords -fpascal-strings  \
+			-isysroot /Developer/SDKs/MacOSX10.6.sdk -bundle
+
+QMAKE_LINK		= $${QMAKE_CXX}
+QMAKE_MAC_SDK	= /Developer/SDKs/MacOSX10.6.sdk
+
+MAKEFILE = $${TARGET}.mak
+
